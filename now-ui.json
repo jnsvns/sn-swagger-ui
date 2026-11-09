@@ -1,0 +1,127 @@
+{
+  "components": {
+    "x-535245-swagger-ui": {
+      "innerComponents": [],
+      "uiBuilder": {
+        "associatedTypes": [
+          "global.core",
+          "global.landing-page"
+        ],
+        "label": "Swagger UI",
+        "tileIcon": "./tile-icon/generic-tile-icon.svg",
+        "description": "Render OpenAPI documentation with Swagger UI",
+        "category": "primitives"
+      },
+      "properties": [
+        {
+          "name": "title",
+          "label": "Accessible title",
+          "description": "Label announced for the API documentation application region.",
+          "readOnly": false,
+          "fieldType": "string",
+          "defaultValue": "API documentation",
+          "required": false
+        },
+        {
+          "name": "definition",
+          "label": "OpenAPI definition",
+          "description": "Inline OpenAPI JSON or YAML document. Takes precedence over Definition URL.",
+          "readOnly": false,
+          "fieldType": "string",
+          "defaultValue": "",
+          "required": false
+        },
+        {
+          "name": "definitionUrl",
+          "label": "Definition URL",
+          "description": "URL of an OpenAPI JSON or YAML document. The resource must be reachable by the browser.",
+          "readOnly": false,
+          "fieldType": "string",
+          "defaultValue": "",
+          "required": false
+        },
+        {
+          "name": "height",
+          "label": "Height",
+          "description": "CSS height of the documentation area, for example 720px or 100%.",
+          "readOnly": false,
+          "fieldType": "string",
+          "defaultValue": "100%",
+          "required": false
+        },
+        {
+          "name": "deepLinking",
+          "label": "Enable deep linking",
+          "description": "Updates the URL fragment as users navigate API operations.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": true,
+          "required": false
+        },
+        {
+          "name": "displayOperationId",
+          "label": "Display operation ID",
+          "description": "Show each operation's OpenAPI operationId.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "name": "docExpansion",
+          "label": "Operation expansion",
+          "description": "Initial expansion level for tags and operations.",
+          "readOnly": false,
+          "fieldType": "choice",
+          "defaultValue": "list",
+          "required": false,
+          "typeMetadata": {
+            "choices": [
+              {"label": "Collapsed", "value": "none"},
+              {"label": "Operation list", "value": "list"},
+              {"label": "Fully expanded", "value": "full"}
+            ],
+            "schema": {"type": "string", "enum": ["none", "list", "full"]}
+          }
+        },
+        {
+          "name": "filter",
+          "label": "Enable filter",
+          "description": "Show a filter field for operations and tags.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "name": "persistAuthorization",
+          "label": "Persist authorization",
+          "description": "Keep entered authorization values in browser storage.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "name": "showExtensions",
+          "label": "Show specification extensions",
+          "description": "Display OpenAPI x- extension fields.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false,
+          "required": false
+        },
+        {
+          "name": "tryItOutEnabled",
+          "label": "Enable Try it out",
+          "description": "Allow users to prepare and send API requests. API authentication, CORS, and ACLs still apply.",
+          "readOnly": false,
+          "fieldType": "boolean",
+          "defaultValue": false,
+          "required": false
+        }
+      ]
+    }
+  },
+  "scopeName": "x_535245_swagger_4"
+}

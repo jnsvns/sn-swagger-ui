@@ -1,0 +1,21 @@
+@import '@servicenow/sass-kit/host';
+@import 'swagger-ui-dist/swagger-ui';
+
+:host {
+	display: block;
+	min-height: 240px;
+}
+
+.swagger-ui-host {
+	background: #fff;
+	box-sizing: border-box;
+	height: var(--swagger-ui-height);
+	min-height: 240px;
+	overflow: auto;
+	width: 100%;
+}
+
+.swagger-ui-host > .swagger-ui {
+	min-width: 0;
+	padding-bottom: 1px;
+}

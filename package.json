@@ -1,0 +1,27 @@
+{
+  "name": "swagger-ui",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Swagger Ui",
+  "keywords": [
+    "ServiceNow",
+    "Next Experience UI Component",
+    "swagger-ui"
+  ],
+  "readme": "./README.md",
+  "engines": {
+    "node": ">=22"
+  },
+  "module": "src/index.js",
+  "dependencies": {
+    "@servicenow/sass-kit": "latest",
+    "@servicenow/ui-core": "24.1.1",
+    "@servicenow/ui-renderer-snabbdom": "24.1.1",
+    "js-yaml": "^5.5.0",
+    "swagger-ui-dist": "^5.34.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.25.7",
+    "sass": "1.53.0"
+  }
+}
